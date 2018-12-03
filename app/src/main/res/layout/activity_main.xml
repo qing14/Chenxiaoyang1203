@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="在千万海外商品中搜索"/>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近搜索"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/qk"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/qk"/>
+
+    </LinearLayout>
+    <com.bwie.asus.chenxiaoyang1203.ActivityClass.CurstomLayout
+        android:background="#5f9f9f"
+        android:id="@+id/fall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.bwie.asus.chenxiaoyang1203.ActivityClass.CurstomLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索发现"
+        android:textSize="20dp"/>
+
+    <com.bwie.asus.chenxiaoyang1203.ActivityClass.CurstomLayout
+        android:background="#5f5f5f"
+        android:id="@+id/hotview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.bwie.asus.chenxiaoyang1203.ActivityClass.CurstomLayout>
+
+
+</LinearLayout>
